@@ -1,5 +1,5 @@
 function calculateQueueOrder(tokens) {
-  // Yash: senior citizen / emergency patients first
+  // Combined FIFO and priority ordering
   return tokens.sort((a, b) => {
     if (a.isPriority !== b.isPriority) {
       return a.isPriority ? -1 : 1;
